@@ -177,7 +177,7 @@ jobs:
         run: docker pull ghcr.io/bretfisher/docker-ci-automation:"$GITHUB_RUN_ID"
         
       - name: Run Trivy for all CVEs (non-blocking)
-        uses: aquasecurity/trivy-action@264c9c5e188ea085e7377fd77abd17bfbd4e5926 #master
+        uses: aquasecurity/trivy-action@cf5c088a69634cd13ccddc735d7926162c31f9a6 #master
         with:
           image-ref: ghcr.io/bretfisher/docker-ci-automation:${{ github.run_id }}
           format: table
