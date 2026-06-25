@@ -55,7 +55,7 @@ jobs:
         id: docker_meta
         uses: docker/metadata-action@030e881283bb7a6894de51c315a6bfe6a94e05cf #v6.0.0
         with:
-          images: bretfisher/docker-ci-automation
+          images: lephucnnn/docker-ci-automation
           flavor: |
             latest=false
           tags: |
